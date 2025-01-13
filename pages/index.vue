@@ -446,16 +446,13 @@ table tr td input:focus {
 
 .step {
   &-arrow {
-    position: absolute;
-    color: var(--c-bootstrap-cyan);
+    @apply absolute text-[#776e65];
   }
 
   &-info {
-    position: absolute;
-    color: var(--c-bootstrap-gray-dark);
-    font-size: x-small;
-    margin-left: 2px;
-    font-weight: bold;
+    @apply absolute;
+    @apply text-sm font-bold text-[#776e65];
+    @apply ml-1;
   }
 
   /*    1 | 2 | 3    */
@@ -463,35 +460,35 @@ table tr td input:focus {
   /*    7 | 6 | 5    */
   &-top-left {
     margin-top: -16px;
-    margin-left: -12px;
+    margin-left: -10px;
   }
   &-top {
-    margin-top: -16px;
-    margin-left: 11px;
+    margin-top: -18px;
+    margin-left: 21px;
   }
   &-top-right {
-    margin-top: -14px;
-    margin-left: 32px;
+    margin-top: -16px;
+    margin-left: 50px;
   }
   &-right {
-    margin-left: 32px;
-    margin-top: 6px;
+    margin-left: 50px;
+    margin-top: 15px;
   }
   &-bottom-right {
-    margin-top: 26px;
-    margin-left: 30px;
+    margin-top: 42px;
+    margin-left: 50px;
   }
   &-bottom {
-    margin-top: 30px;
-    margin-left: 11px;
+    margin-top: 44px;
+    margin-left: 21px;
   }
   &-bottom-left {
-    margin-top: 28px;
-    margin-left: -8px;
+    margin-top: 44px;
+    margin-left: -10px;
   }
   &-left {
-    margin-left: -12px;
-    margin-top: 6px;
+    margin-left: -10px;
+    margin-top: 15px;
   }
 }
 
